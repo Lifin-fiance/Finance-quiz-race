@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Quiz Race - LIFIN</title>
+    
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Memuat Font Baloo 2 dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'baloo': ['"Baloo 2"', 'cursive'],
+                    },
+                    colors: {
+                        'lifin-blue': '#04b3e3',
+                        'lifin-dark-blue': '#004b75',
+                        'lifin-pink': '#eeace6',
+                        'lifin-red': '#ff6b6b',
+                        'lifin-yellow': '#ffc72c',
+                        'lifin-purple': '#9b59b6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            transition: background-color 0.5s ease-out;
+            overflow: hidden; /* Mencegah scroll saat drag */
+        }
+        .card-stack {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+        }
+        .game-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+            user-select: none;
+            transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+            will-change: transform;
+        }
+        .game-card.dragging {
+            cursor: grabbing;
+            transition: none; /* Hapus transisi saat sedang di-drag */
+        }
+        .game-card.thrown {
+            transition: all 0.5s ease-out;
+        }
+        .card-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Halaman -->
+    <header class="fixed top-0 left-0 w-full h-[90px] bg-white flex items-center justify-between px-6 lg:px-20 z-50" 
+            style="box-shadow: 0 4px 20px 0 rgba(4,179,227,0.2);">
+        <div class="flex items-center">
+            <img src="https://placehold.co/100x100/04b3e3/FFFFFF?text=LIFIN" 
+                 class="w-[75px] object-cover cursor-pointer" 
+                 alt="logolifin" 
+                 onclick="window.location.href='https://www.lifin.fun/'">
+        </div>
+        <button onclick="window.location.href='/LIFIN/dashboard.html'"
+          class="bg-lifin-red text-white text-lg font-extrabold px-5 py-2 rounded-full font-baloo transition-transform duration-200 hover:scale-105" 
+          style="box-shadow: 0 5px 0px 0 #d44f4f;">
+          Kembali
+        </button>
+    </header>
+
+    <main class="pt-[90px] flex flex-col justify-center items-center min-h-screen">
+        <!-- Judul Utama -->
+        <div class="text-center mb-8 px-4">
+            <h1 id="game-title" class="font-baloo text-lifin-blue text-4xl lg:text-5xl font-extrabold tracking-wider transition-all duration-300">
+                FINANCE QUIZ RACE
+            </h1>
+            <p id="game-subtitle" class="max-w-2xl mx-auto mt-1 text-gray-600 text-lg h-6 transition-all duration-300">
+                Tarik & lempar kartu untuk memilih game!
+            </p>
+        </div>
+
+        <!-- Tumpukan Kartu -->
+        <div id="card-stack" class="card-stack">
+            <!-- Kartu akan dimasukkan oleh JavaScript -->
+        </div>
+        
+        <!-- Tombol Reset -->
+        <button id="reset-btn" class="mt-8 bg-white text-gray-700 font-bold py-2 px-4 rounded-full shadow-md flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 9a9 9 0 0114.65-5.65M20 15a9 9 0 01-14.65 5.65"></path></svg>
+            Ulangi
+        </button>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const games = [
+                { title: 'Akuntan Cilik', subtitle: 'Adu cepat berhitung!', href: './akuntan-cilik.html', color: '#04b3e3', bgColor: '#e0f7fa', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>` },
+                { title: 'Cuanesia', subtitle: 'Kebutuhan vs Keinginan.', href: './cuanesia.html', color: '#004b75', bgColor: '#e0e8f0', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>` },
+                { title: 'Detektif Cuan', subtitle: 'Tebak fakta atau hoaks!', href: './true-false.html', color: '#eeace6', bgColor: '#fbe4f8', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>` },
+                { title: 'Split Smart', subtitle: 'Kelompokkan pengeluaran.', href: './split-smart.html', color: '#ff6b6b', bgColor: '#ffeeee', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>` },
+                { title: 'Penjelajah Uang', subtitle: 'Jelajahi sejarah uang.', href: './penjelajah-uang.html', color: '#ffc72c', bgColor: '#fff8e1', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>` },
+                { title: 'Kasus Cuan', subtitle: 'Pecahkan studi kasus finansial.', href: './kasus-cuan.html', color: '#9b59b6', bgColor: '#f3e5f5', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>` }
+            ];
+
+            const stackContainer = document.getElementById('card-stack');
+            const gameTitleEl = document.getElementById('game-title');
+            const gameSubtitleEl = document.getElementById('game-subtitle');
+            
+            let cardElements = [];
+
+            function createCards() {
+                stackContainer.innerHTML = '';
+                cardElements = [];
+                // Buat kartu dan tambahkan event listener sekali saja
+                games.slice().reverse().forEach((game) => {
+                    const card = document.createElement('div');
+                    card.className = 'game-card block rounded-3xl overflow-hidden shadow-2xl';
+                    card.style.backgroundColor = game.color;
+                    card.dataset.href = game.href;
+                    
+                    card.innerHTML = `
+                        <div class="card-texture h-full flex flex-col justify-center items-center p-6 text-center text-white">
+                            ${game.icon}
+                            <h3 class="font-extrabold text-3xl mt-4">${game.title}</h3>
+                            <p class="font-semibold mt-1">${game.subtitle}</p>
+                        </div>
+                    `;
+                    stackContainer.appendChild(card);
+                    cardElements.unshift(card);
+                    addCardListeners(card); // Tambahkan listener ke setiap kartu
+                });
+                updateStack();
+            }
+            
+            function addCardListeners(card) {
+                let isDragging = false, startX = 0, startY = 0, offsetX = 0, offsetY = 0, hasMoved = false;
+
+                function onPointerDown(e) {
+                    // Hanya izinkan drag jika kartu ini adalah yang paling atas
+                    if (card !== cardElements[cardElements.length - 1]) return;
+                    
+                    e.preventDefault();
+                    isDragging = true;
+                    startX = e.clientX || e.touches[0].clientX;
+                    startY = e.clientY || e.touches[0].clientY;
+                    card.classList.add('dragging');
+                    hasMoved = false;
+
+                    document.addEventListener('mousemove', onPointerMove);
+                    document.addEventListener('mouseup', onPointerUp);
+                    document.addEventListener('touchmove', onPointerMove, { passive: false });
+                    document.addEventListener('touchend', onPointerUp);
+                }
+
+                function onPointerMove(e) {
+                    if (!isDragging) return;
+                    hasMoved = true;
+                    const currentX = e.clientX || e.touches[0].clientX;
+                    const currentY = e.clientY || e.touches[0].clientY;
+                    offsetX = currentX - startX;
+                    offsetY = currentY - startY;
+                    card.style.transform = `translate(${offsetX}px, ${offsetY}px) rotate(${offsetX / 20}deg)`;
+                }
+
+                function onPointerUp() {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    card.classList.remove('dragging');
+
+                    document.removeEventListener('mousemove', onPointerMove);
+                    document.removeEventListener('mouseup', onPointerUp);
+                    document.removeEventListener('touchmove', onPointerMove);
+                    document.removeEventListener('touchend', onPointerUp);
+
+                    if (!hasMoved) { // Jika ini adalah klik, bukan drag
+                        window.location.href = card.dataset.href;
+                        return;
+                    }
+
+                    if (Math.abs(offsetX) > 100 || Math.abs(offsetY) > 100) {
+                        // Lempar kartu
+                        const endX = offsetX * 5;
+                        const endY = offsetY * 5;
+                        card.classList.add('thrown');
+                        card.style.transform = `translate(${endX}px, ${endY}px) rotate(${offsetX / 5}deg)`;
+                        
+                        cardElements.pop(); // Hapus dari atas
+                        
+                        setTimeout(() => {
+                            card.classList.remove('thrown');
+                            card.style.transform = '';
+                            stackContainer.removeChild(card); // Hapus dari DOM
+                            stackContainer.insertBefore(card, stackContainer.firstChild); // Pindahkan ke bawah di DOM
+                            cardElements.unshift(card); // Tambahkan kembali ke bawah array
+                            updateStack();
+                        }, 500);
+
+                    } else {
+                        // Kembalikan kartu ke tumpukan
+                        card.style.transform = '';
+                        updateStack();
+                    }
+                }
+                
+                card.addEventListener('mousedown', onPointerDown);
+                card.addEventListener('touchstart', onPointerDown, { passive: false });
+            }
+
+            function updateStack() {
+                cardElements.forEach((card, i) => {
+                    const isTop = i === cardElements.length - 1;
+                    card.style.transform = `translateY(${-i * 6}px) rotate(${Math.random() * 4 - 2}deg)`;
+                    card.style.zIndex = i;
+                    // Hanya kartu teratas yang bisa diinteraksikan
+                    card.style.pointerEvents = isTop ? 'auto' : 'none';
+                });
+                updateInfo();
+            }
+
+            function updateInfo() {
+                if (cardElements.length === 0) {
+                    gameTitleEl.textContent = "Selesai!";
+                    gameSubtitleEl.textContent = "Klik 'Ulangi' untuk bermain lagi.";
+                    return;
+                };
+                const topCard = cardElements[cardElements.length - 1];
+                const gameData = games.find(g => g.href === topCard.dataset.href);
+                
+                gameTitleEl.textContent = gameData.title;
+                gameTitleEl.style.color = gameData.color;
+                gameSubtitleEl.textContent = gameData.subtitle;
+                document.body.style.backgroundColor = gameData.bgColor;
+            }
+
+            document.getElementById('reset-btn').addEventListener('click', createCards);
+            
+            createCards();
+        });
+    </script>
+</body>
+</html>
