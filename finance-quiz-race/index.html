@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Quiz Race - Pilihan Game</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {  
+                extend: {
+                    fontFamily: {
+                        'baloo': ['"Baloo 2"', 'cursive'],
+                    },
+                }
+            }
+        
+    </script>
+    <style>
+        /* Mengaplikasikan font Baloo 2 sebagai font default */
+        body {
+            font-family: 'Baloo 2', cursive;
+            background-color: white;
+            background-image: 
+                radial-gradient(#04b3e3 2px, transparent 2px), 
+                radial-gradient(#04b3e3 2px, transparent 2px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+
+        /* --- CSS untuk Slider Swiper --- */
+        .swiper-container {
+            width: 100%;
+            max-width: 1200px; /* Lebar maksimum untuk slider di desktop */
+            padding-top: 20px;
+            padding-bottom: 50px;
+            position: static; /* Memastikan posisi tidak mengganggu tombol */
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px; /* Lebar kartu game default */
+            height: 450px; /* Tinggi kartu game */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .swiper-slide:not(.swiper-slide-active) {
+            transform: scale(0.9);
+        }
+
+
+        /* Menyesuaikan ukuran ikon panah agar pas di dalam lingkaran */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        /* --- CSS untuk Efek Tombol 3D --- */
+        .button-3d {
+            transition: all 0.15s ease-in-out;
+        }
+
+        .button-3d:hover {
+            transform: translateY(6px);
+            box-shadow: none !important;
+        }
+
+        .button-3d:active {
+            transform: translateY(6px);
+            box-shadow: none !important;
+        }
+        
+        /* Optimasi untuk Mobile */
+        @media (max-width: 640px) {
+            .swiper-slide {
+                width: 280px;
+                height: 420px;
+            }
+            .swiper-slide h2 {
+                font-size: 2rem;
+            }
+            .swiper-slide p {
+                font-size: 0.875rem;
+            }
+            .swiper-slide:not(.swiper-slide-active) {
+                transform: scale(1);
+            }
+        }
+
+
+            /* Custom styles from index.html for consistent UI */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8; /* A light background to make the footer stand out */
+    }
+
+    .font-baloo {
+      font-family: 'Baloo 2', cursive;
+    }
+
+    /* Animation for footer links from index.html */
+    .footer-link-animated {
+      position: relative;
+      font-family: 'Baloo 2', cursive;
+      font-weight: 600; /* Semibold */
+      color: rgba(255, 255, 255, 0.7); /* text-white/70 */
+      text-decoration: none;
+      transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    }
+
+    .footer-link-animated::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .footer-link-animated:hover {
+      color: white;
+      font-weight: 700; /* Bold */
+    }
+
+    .footer-link-animated:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Main content can go here -->
+  <main class="flex-grow">
+    
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="w-full h-[90px] bg-white flex items-center justify-between px-6 lg:px-20 z-50 sticky top-0" 
+            style="box-shadow: 0 3px 0px 0 rgba(4,179,227,0.2);">
+        <div class="flex items-center">
+            <img src="assets/images/icon.png" 
+                 class="w-[90px] h-auto object-cover cursor-pointer" 
+                 alt="logolifin" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/90x45/ffffff/000000?text=Logo';"
+ HEAD
+                 onclick="window.location.href='https://www.lifin.fun/'">
+        </div>
+        
+        </div>
+        
+        <button onclick="window.location.href='https://www.lifin.fun/dashboard.html'"
+
+          class="button-3d bg-[#FF6B6B] text-white text-lg font-extrabold px-5 py-2 rounded-full font-['Baloo_2']" 
+          style="box-shadow: 0 6px 0px 0 #d44f4f;">
+          Back
+        </button>
+    </header>
+
+    <div class="min-h-screen flex flex-col items-center justify-start p-4 overflow-hidden">
+
+        <div class="-mt-[100px] md:-mt-[120px] lg:-mt-[200px]">
+             <img src="assets/images/finance-quiz-logo.svg" 
+                  alt="Finance Quiz Logo" 
+                  onerror="this.onerror=null;this.src='https://placehold.co/400x100/ffffff/000000?text=Finance+Quiz';"
+                  class="w-80 md:w-[400px] lg:w-[600px]">
+        </div>
+
+        <!-- [PEMBUNGKUS BARU] untuk mengatasi masalah posisi tombol -->
+        <div class="relative w-full flex justify-center -mt-[100px] md:-mt-[100px] lg:-mt-[150px]">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#04b3e3] w-full h-full rounded-3xl p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Akuntan Cilik</h2>
+                                <p class="font-sans font-normal mt-2">Uji kemampuan berhitung dan logikamu dalam akuntansi dasar!</p>
+                            </div>
+                            <a href="akuntan-cilik.html" class="button-3d font-baloo bg-white text-[#04b3e3] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #ccefff;">
+                                MAIN SEKARANG
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#004b75] w-full h-full rounded-3xl p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Cuanesia</h2>
+                                <p class="font-sans font-normal mt-2">Jelajahi dunia investasi dan raih keuntungan sebesar-besarnya.</p>
+                            </div>
+                            <a href="cuanesia.html" class="button-3d font-baloo bg-white text-[#004b75] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #ccefff;">
+                                MAIN SEKARANG
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#eeace6] w-full h-full rounded-3xl  p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Detektif Cuan</h2>
+                                <p class="font-sans font-normal mt-2">Pecahkan misteri keuangan dan bedakan fakta dari hoaks!</p>
+                            </div>
+                            <a href="true-false.html" class="button-3d font-baloo bg-white text-[#eeace6] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #BE8AB8;">
+                                MAIN SEKARANG
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#FF6B6B] w-full h-full rounded-3xl  p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Split Smart</h2>
+                                <p class="font-sans font-normal mt-2">Atur anggaran dan alokasikan danamu dengan cerdas dan bijak.</p>
+                            </div>
+                            <a href="split-smart.html" class="button-3d font-baloo bg-white text-[#FF6B6B] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #D44F4F;">
+                                MAIN SEKARANG
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#ffc72c] w-full h-full rounded-3xl p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Penjelajah Uang</h2>
+                                <p class="font-sans font-normal mt-2">Kenali berbagai mata uang dan sejarahnya di seluruh dunia.</p>
+                            </div>
+                            <a href="penjelajah-uang.html" class="button-3d font-baloo bg-white text-[#ffc72c] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #D4B000;">
+                                MAIN SEKARANG
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#9747ff] w-full h-full rounded-3xl p-6 flex flex-col justify-between text-white">
+                            <div>
+                                <h2 class="font-baloo font-extrabold text-4xl">Kasus Cuan</h2>
+                                <p class="font-sans font-normal mt-2">Pecahkan studi kasus keuangan nyata dan ambil keputusan terbaik!</p>
+                            </div>
+                            <a href="kasus-cuan.html" class="button-3d font-baloo bg-white text-[#9747ff] text-center font-bold py-3 px-6 rounded-xl text-xl" style="box-shadow: 0 6px 0px 0 #b37bfd;">
+                                MAIN SEKARANG 
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Tombol Navigasi (sekarang di dalam kontainer utama) -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Inisialisasi Swiper.js
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'slide',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            
+            // [BARU] Menambahkan kontrol keyboard
+            keyboard: {
+                enabled: true,
+            },
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                }
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>
+
+    <script>
+        // Inisialisasi Swiper.js
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'slide',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            
+            // [BARU] Menambahkan kontrol keyboard
+            keyboard: {
+                enabled: true,
+            },
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                }
+            }
+        });
+
+        // Fungsi navigasi tombol Back
+        function goBackOrHome() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+    <!-- =================================================================== -->
+    <!-- ======================= START: FOOTER SECTION ===================== -->
+    <!-- =================================================================== -->
+    <footer class="bg-[#04b3e3] text-white mt-[50px] lg:mt-[75px] md:mt-[50px]  pt-16 pb-8 rounded-t-[50px] lg:rounded-t-[100px] relative overflow-hidden">
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-8">
+        
+        <!-- Footer Links Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 text-center sm:text-left">
+            
+            <!-- Kolom Utama -->
+             <div>
+               <h4 class="text-xl font-extrabold mb-4 font-baloo">Utama</h4>
+               <ul class="space-y-3">
+                 <li><a href="https://www.lifin.fun" class="text-lg footer-link-animated">Beranda</a></li>
+                 <li><a href="https://www.lifin.fun/berita.html" class="text-lg footer-link-animated">News</a></li>
+                 <li><a href="https://www.lifin.fun/help.html" class="text-lg footer-link-animated">FAQ</a></li>
+               </ul>
+             </div>
+
+            <!-- Kolom Game -->
+            <div>
+              <h4 class="text-xl font-extrabold mb-4 font-baloo">Game</h4>
+              <ul class="space-y-3">
+                <li><a href="https://dompet-pintar.lifin.fun/" class="text-lg footer-link-animated">Dompet Pintar</a></li>
+                <li><a href="https://investor-cilik.lifin.fun/" class="text-lg footer-link-animated">Investor Cilik</a></li>
+                <li><a href="https://finance-quiz-race.lifin.fun/" class="text-lg footer-link-animated">Finance Quiz Race</a></li>
+              </ul>
+            </div>
+
+            <!-- Kolom Fitur -->
+            <div>
+              <h4 class="text-xl font-extrabold mb-4 font-baloo">Fitur</h4>
+              <ul class="space-y-3">
+                <li><a href="https://lifin.fun/fitur-kalkulator-keuangan.html" class="text-lg footer-link-animated">Kalkulator Keuangan</a></li>
+                <li><a href="https://lifin.fun/fitur-mesin-waktu-finansial.html" class="text-lg footer-link-animated">Mesin Waktu Finansial</a></li>
+              </ul>
+            </div>
+
+            <!-- Kolom Alamat / Temui Kami -->
+            <div>
+              <h4 class="text-xl font-extrabold mb-4 font-baloo">Temui Kami</h4>
+              <a href="https://maps.app.goo.gl/RtiF4kpzXezkJ6rR8" target="_blank" rel="noopener noreferrer" class="text-lg leading-relaxed footer-link-animated">
+                Jalan Tirto Sentono No.16, Landungsari, Kec. Dau, Kabupaten Malang, Jawa Timur 65151
+              </a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full border-t border-white/20 mt-12 mb-8"></div>
+
+        <!-- Bottom Section: Socials and Legal -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            
+            <!-- Social Media Icons (Kiri) -->
+            <div class="flex justify-center gap-3 lg:gap-4 order-1">
+                <a href="https://www.linkedin.com/in/lifin-literasi-finansial-pelajar-4280b7368/" target="_blank" class="w-12 h-12 lg:w-[60px] lg:h-[60px] rounded-full bg-white flex items-center justify-center shadow-md transition-all duration-200 hover:-translate-y-[10px] hover:shadow-xl hover:bg-[#E8F4FD]">
+                    <img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-6 h-6 lg:w-[32px] lg:h-[32px] object-contain" />
+                </a>
+                <a href="https://www.instagram.com/lifinfun?igsh=OHB5ZTJpdGs1eHBy" class="w-12 h-12 lg:w-[60px] lg:h-[60px] rounded-full bg-white flex items-center justify-center shadow-md transition-all duration-200 hover:-translate-y-[10px] hover:shadow-xl hover:bg-[#FDE8F4]">
+                    <img src="assets/images/ig.svg" alt="Instagram" class="w-6 h-6 lg:w-[32px] lg:h-[32px] object-contain" />
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lifin.website@gmail.com&su=HALO%20LIFIN!&body=Aku%20tertarik%20sama%20kamu%20dan%20punya%20saran%20yang%20menarik%20buat%20kamu" target="_blank" class="w-12 h-12 lg:w-[60px] lg:h-[60px] rounded-full bg-white flex items-center justify-center shadow-md transition-all duration-200 hover:-translate-y-[10px] hover:shadow-xl hover:bg-[#F4F8FB]">
+                    

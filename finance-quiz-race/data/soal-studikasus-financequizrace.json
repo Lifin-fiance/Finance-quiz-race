@@ -1,0 +1,602 @@
+[
+    {
+        "Nomor": 1,
+        "Pertanyaan": "Raihan memiliki Rp20.000 dan ingin mulai membangun kebiasaan menabung. Ibunya menawarkan dua pilihan: menaruhnya di rekening bank dengan biaya admin Rp2.000/bulan, atau di celengan kaca di kamarnya. Manakah argumen yang paling mencerminkan literasi finansial yang matang dalam situasi ini?",
+        "Pilihan Ganda": "A. Bank lebih baik karena aman dan membangun rekam jejak perbankan sejak dini.<br>B. Celengan lebih baik karena secara psikologis memotivasi saat melihat uang bertambah secara fisik.<br>C. Bank adalah pilihan yang buruk karena biaya admin akan menyebabkan kerugian pasti (guaranteed loss) pada modal sekecil ini.<br>D. Celengan lebih baik karena mengajarkan konsep dasar 'menyimpan' tanpa komplikasi instrumen keuangan.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 2,
+        "Pertanyaan": "Kian butuh membeli buku paket untuk pelajaran yang ia sudah kuasai seharga Rp100.000 (kewajiban). Di saat yang sama, ada kursus online tentang skill baru yang berpotensi menghasilkan uang seharga Rp100.000, diskon 50% hanya hari ini. Keputusan manakah yang menunjukkan pemahaman paling dalam tentang 'biaya peluang'?",
+        "Pilihan Ganda": "A. Membeli buku, karena pendidikan formal adalah prioritas utama yang tidak bisa ditawar.<br>B. Membeli kursus, karena potensi keuntungan di masa depan jauh melebihi manfaat buku yang sudah dikuasai.<br>C. Tidak membeli keduanya dan menyimpan uangnya untuk kebutuhan yang lebih mendesak nanti.<br>D. Membeli buku, sambil menyadari bahwa 'biaya' sebenarnya bukan hanya Rp100.000, tetapi juga kehilangan potensi keuntungan dari kursus.",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 3,
+        "Pertanyaan": "Faraz menggunakan 'paylater' untuk membeli sepatu seharga Rp1.200.000 dengan cicilan 12 bulan, total bayar Rp1.350.000. Temannya berkata ini bagus untuk membangun 'skor kredit'. Manakah prinsip keuangan fundamental yang paling diabaikan dalam argumen tersebut?",
+        "Pilihan Ganda": "A. Prinsip nilai waktu dari uang (time value of money).<br>B. Prinsip bahwa utang konsumtif harus dihindari jika memungkinkan.<br>C. Prinsip bahwa membangun skor kredit tidak seharusnya menjadi alasan untuk membayar lebih mahal.<br>D. Prinsip likuiditas dalam pengelolaan arus kas pribadi.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 4,
+        "Pertanyaan": "Pradipta menyimpan Rp1.000.000 di laci. Rifai menyimpan Rp1.000.000 di deposito dengan bunga 3% setahun. Jika inflasi tahun itu adalah 5%, pernyataan manakah yang paling akurat?",
+        "Pilihan Ganda": "A. Hanya Pradipta yang kehilangan daya beli karena uangnya tidak bertumbuh.<br>B. Keduanya kehilangan daya beli, namun Rifai kehilangan lebih sedikit dibanding Pradipta.<br>C. Rifai tidak kehilangan daya beli karena uangnya bertambah menjadi Rp1.030.000.<br>D. Daya beli keduanya sama-sama turun sebesar 5%, terlepas dari di mana uang disimpan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 5,
+        "Pertanyaan": "Farel, yang dikenal kurang disiplin, meminjam uang dari Kian. Dari sudut pandang Kian sebagai pemberi pinjaman, perubahan paling signifikan pada posisi keuangannya adalah...",
+        "Pilihan Ganda": "A. Asetnya bertambah dalam bentuk piutang.<br>B. Likuiditas kasnya berkurang untuk sementara.<br>C. Portofolionya kini terekspos pada risiko kredit (credit risk).<br>D. Ia sedang melakukan investasi pada aset sosial (pertemanan).",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 6,
+        "Pertanyaan": "Rifai ditawari pekerjaan A dengan gaji Rp10 juta/bulan di bidang yang tidak ia sukai, dan pekerjaan B dengan gaji Rp7 juta/bulan di bidang yang merupakan passion-nya. Konsep apa yang paling relevan untuk dipertimbangkan Rifai selain angka nominal gaji?",
+        "Pilihan Ganda": "A. Pendapatan pasif<br>B. Imbalan psikis (psychic income)<br>C. Arus kas bersih (net cash flow)<br>D. Potensi capital gain",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 7,
+        "Pertanyaan": "Faraz memiliki anggaran bulanan. Ia menemukan penawaran 'beli 2 gratis 1' untuk sabun yang biasa ia pakai. Ia pun membeli 2, yang membuatnya harus mengurangi anggaran untuk pos 'hiburan' bulan ini. Tindakan Faraz paling tepat dideskripsikan sebagai...",
+        "Pilihan Ganda": "A. Pembelian impulsif karena tidak ada dalam rencana awal.<br>B. Optimalisasi anggaran dengan memanfaatkan diskon untuk kebutuhan rutin.<br>C. Keputusan yang buruk karena mengorbankan keseimbangan hidup (hiburan).<br>D. Pengalihan dana antar pos anggaran berdasarkan prioritas situasional.",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 8,
+        "Pertanyaan": "Kian berinvestasi pada saham perusahaan X. Saham tersebut turun 20%, namun Kian menolak menjualnya dengan alasan 'sudah terlanjur rugi, sekalian saja ditunggu sampai naik lagi'. Bias kognitif apa yang paling mendominasi keputusan Kian?",
+        "Pilihan Ganda": "A. Efek ikut-ikutan (Bandwagon Effect)<br>B. Bias konfirmasi (Confirmation Bias)<br>C. Kekeliruan biaya hangus (Sunk Cost Fallacy)<br>D. Efek penahan (Anchoring Effect)",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 9,
+        "Pertanyaan": "Pradipta menemukan dompet dan mengembalikannya. Pemiliknya memberikan imbalan Rp50.000. Temannya bilang, 'Harusnya kamu minta Rp100.000, dia kelihatannya orang kaya'. Tindakan awal Pradipta yang mengembalikan tanpa pamrih menunjukkan...",
+        "Pilihan Ganda": "A. Negosiasi yang buruk.<br>B. Kurangnya kesadaran akan peluang.<br>C. Integritas finansial.<br>D. Perilaku menghindari risiko.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 10,
+        "Pertanyaan": "Farel menerima SMS undian berhadiah yang memintanya mengirimkan 'biaya klaim' Rp200.000 ke sebuah rekening. Mana pola pikir yang paling efektif untuk mengidentifikasi ini sebagai penipuan?",
+        "Pilihan Ganda": "A. 'Saya tidak pernah ikut undian ini, jadi tidak mungkin menang.'<br>B. 'Hadiah yang sah tidak pernah meminta uang dari pemenangnya.'<br>C. 'Nomor pengirimnya tidak terlihat seperti nomor perusahaan resmi.'<br>D. 'Jumlah biaya klaimnya tidak sebanding dengan hadiah yang dijanjikan.'",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 11,
+        "Pertanyaan": "Raihan memiliki polis asuransi jiwa. Pernyataan mana yang paling tepat menjelaskan fungsi utama dari produk keuangan ini?",
+        "Pilihan Ganda": "A. Sebuah instrumen investasi untuk menggandakan uang.<br>B. Sebuah alat mitigasi risiko untuk melindungi nilai ekonomi seseorang bagi ahli warisnya.<br>C. Sebuah tabungan jangka panjang yang dijamin oleh pemerintah.<br>D. Sebuah cara untuk mendapatkan perawatan medis gratis di rumah sakit.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 12,
+        "Pertanyaan": "Sebuah penawaran investasi menjanjikan 'keuntungan pasti 20% per bulan'. Sebagai investor yang terliterasi, respons pertama yang paling tepat adalah...",
+        "Pilihan Ganda": "A. Segera mencari tahu cara berinvestasi karena ini peluang langka.<br>B. Merasa skeptis, karena imbal hasil tinggi selalu berbanding lurus dengan risiko tinggi (high risk, high return).<br>C. Mengajak teman-teman untuk ikut agar risikonya bisa ditanggung bersama.<br>D. Membandingkannya dengan suku bunga deposito bank untuk melihat apakah penawaran ini wajar.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 13,
+        "Pertanyaan": "Faraz memiliki beberapa utang: ke teman (bunga 0%), ke kartu kredit (bunga 24%/tahun), dan ke pinjaman online (bunga 36%/tahun). Jika ia punya dana terbatas untuk membayar, strategi paling efisien untuk meminimalkan beban bunga adalah melunasi...",
+        "Pilihan Ganda": "A. Utang ke teman dulu untuk menjaga hubungan baik.<br>B. Utang dengan nominal paling kecil dulu agar terasa ada progres (metode 'snowball').<br>C. Utang dengan bunga paling tinggi dulu, yaitu pinjaman online (metode 'avalanche').<br>D. Membayar minimum payment pada semuanya secara merata.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 14,
+        "Pertanyaan": "Pemerintah mengumumkan kenaikan suku bunga acuan. Manakah dampak yang paling mungkin terjadi pada masyarakat umum?",
+        "Pilihan Ganda": "A. Bunga cicilan KPR/kendaraan akan cenderung turun.<br>B. Bunga tabungan dan deposito akan cenderung naik, membuat orang lebih tertarik menabung.<br>C. Harga-harga barang di pasar akan langsung turun drastis.<br>D. Perusahaan akan lebih mudah mendapatkan pinjaman untuk ekspansi.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 15,
+        "Pertanyaan": "Farel berkata, 'Saya tidak perlu dana darurat karena saya punya kartu kredit dengan limit besar'. Mengapa pernyataan ini secara fundamental keliru?",
+        "Pilihan Ganda": "A. Karena kartu kredit tidak bisa digunakan di semua tempat.<br>B. Karena menggunakan kartu kredit untuk darurat berarti menciptakan utang berbunga tinggi, bukan solusi.<br>C. Karena limit kartu kredit bisa diturunkan oleh bank kapan saja tanpa pemberitahuan.<br>D. Karena dana darurat seharusnya dalam bentuk uang tunai yang disimpan di rumah.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 16,
+        "Pertanyaan": "Pradipta menaruh seluruh dana investasinya pada saham perusahaan teknologi 'Maju Terus'. Farel menyebar dananya ke saham teknologi, saham perbankan, dan obligasi pemerintah. Jika sektor teknologi tiba-tiba anjlok, strategi siapa yang menunjukkan manajemen risiko yang lebih baik?",
+        "Pilihan Ganda": "A. Pradipta, karena fokus pada satu saham bisa memberikan keuntungan maksimal (konsentrasi).<br>B. Farel, karena kerugian di satu sektor dapat diredam oleh kinerja sektor lain (diversifikasi).<br>C. Keduanya sama berisiko karena sama-sama berinvestasi di pasar modal.<br>D. Pradipta, karena ia menunjukkan keyakinan penuh pada investasinya.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 17,
+        "Pertanyaan": "Kian ingin membeli rumah seharga Rp500 juta. Ia hanya memiliki uang muka Rp50 juta (10%). Bank mensyaratkan uang muka minimal 20%. Apa istilah yang tepat untuk kekurangan dana yang harus dipenuhi Kian?",
+        "Pilihan Ganda": "A. Defisit Anggaran<br>B. Kesenjangan Uang Muka (Down Payment Gap)<br>C. Liabilitas Jangka Panjang<br>D. Biaya Peluang",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 18,
+        "Pertanyaan": "Raihan membeli reksa dana saham secara rutin setiap bulan dengan nominal yang sama, tidak peduli harga unitnya sedang naik atau turun. Strategi investasi yang diterapkan Raihan disebut...",
+        "Pilihan Ganda": "A. Market Timing<br>B. Lump Sum Investing<br>C. Dollar Cost Averaging (DCA)<br>D. Value Investing",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 19,
+        "Pertanyaan": "Rifai menerima dividen dari saham yang dimilikinya. Di sisi lain, Faraz menjual sahamnya dengan harga lebih tinggi dari harga beli. Apa perbedaan mendasar antara pendapatan yang mereka terima?",
+        "Pilihan Ganda": "A. Dividen adalah keuntungan modal, sementara keuntungan penjualan adalah pendapatan pasif.<br>B. Pendapatan Rifai (dividen) adalah pembagian laba perusahaan, sementara pendapatan Faraz adalah keuntungan modal (capital gain).<br>C. Keduanya merupakan jenis pendapatan yang sama, yaitu keuntungan investasi.<br>D. Pendapatan Faraz lebih baik karena jumlahnya pasti lebih besar dari dividen.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 20,
+        "Pertanyaan": "Pradipta mendengar rumor bahwa perusahaan Z akan diakuisisi, lalu ia membeli sahamnya dan harganya naik. Ternyata rumor itu ia dengar dari pamannya yang merupakan direktur di perusahaan Z. Tindakan Pradipta berpotensi ilegal karena...",
+        "Pilihan Ganda": "A. Terlalu cepat mengambil keuntungan.<br>B. Berinvestasi berdasarkan rumor.<br>C. Melakukan perdagangan orang dalam (insider trading).<br>D. Tidak melakukan diversifikasi.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 21,
+        "Pertanyaan": "Farel memiliki profil risiko 'konservatif'. Instrumen investasi manakah yang paling TIDAK cocok untuknya?",
+        "Pilihan Ganda": "A. Deposito<br>B. Obligasi Pemerintah Ritel (ORI)<br>C. Reksa Dana Pasar Uang<br>D. Saham perusahaan rintisan (startup)",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 22,
+        "Pertanyaan": "Pemerintah menerapkan kebijakan fiskal dengan menaikkan pajak penghasilan. Apa tujuan utama dari kebijakan ini dari sudut pandang ekonomi makro?",
+        "Pilihan Ganda": "A. Untuk membuat warga negara lebih miskin.<br>B. Untuk meningkatkan pendapatan negara dan berpotensi mendinginkan ekonomi yang terlalu panas (overheating).<br>C. Untuk mendorong masyarakat agar lebih banyak berbelanja.<br>D. Untuk mengurangi jumlah uang yang beredar di masyarakat secara langsung.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 23,
+        "Pertanyaan": "Kian memiliki utang kartu kredit Rp10 juta dengan bunga 2% per bulan. Jika ia hanya membayar tagihan minimum setiap bulan, apa yang akan terjadi?",
+        "Pilihan Ganda": "A. Utangnya akan lunas dalam waktu singkat.<br>B. Sebagian besar pembayarannya akan habis untuk membayar bunga, dan pokok utang berkurang sangat lambat.<br>C. Skor kreditnya akan meningkat pesat.<br>D. Bank akan menghapuskan sisa utangnya setelah satu tahun.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 24,
+        "Pertanyaan": "Faraz menggunakan celah hukum yang legal untuk mengurangi beban pajaknya. Pradipta dengan sengaja tidak melaporkan sebagian penghasilannya untuk menghindari pajak. Perbedaan fundamental antara tindakan Faraz dan Pradipta adalah...",
+        "Pilihan Ganda": "A. Tidak ada, keduanya sama-sama mengurangi pembayaran pajak.<br>B. Faraz melakukan penghindaran pajak (tax avoidance) yang legal, sementara Pradipta melakukan penggelapan pajak (tax evasion) yang ilegal.<br>C. Pradipta lebih cerdas karena berhasil membayar pajak lebih sedikit.<br>D. Faraz melakukan penggelapan pajak (tax evasion), sementara Pradipta melakukan penghindaran pajak (tax avoidance).",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 25,
+        "Pertanyaan": "Raihan mendapat kenaikan gaji 20%. Ia langsung pindah ke apartemen yang lebih mahal dan membeli mobil baru, sehingga total pengeluarannya juga naik 20%. Fenomena yang dialami Raihan disebut...",
+        "Pilihan Ganda": "A. Peningkatan Kesejahteraan Finansial.<br>B. Inflasi Gaya Hidup (Lifestyle Inflation).<br>C. Alokasi Aset Strategis.<br>D. Efek Bunga Majemuk.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 26,
+        "Pertanyaan": "Rifai ditawari skema investasi di mana ia harus merekrut dua orang baru untuk mendapatkan keuntungan, dan keuntungan tersebut berasal dari uang pendaftaran anggota baru. Skema ini memiliki ciri-ciri kuat dari...",
+        "Pilihan Ganda": "A. Bisnis Multi-Level Marketing (MLM) yang sah.<br>B. Skema Ponzi.<br>C. Skema Piramida.<br>D. Investasi Reksa Dana.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 27,
+        "Pertanyaan": "Pradipta menghitung kekayaan bersihnya (net worth). Manakah dari berikut ini yang merupakan 'liabilitas'?",
+        "Pilihan Ganda": "A. Saldo tabungan di bank.<br>B. Nilai rumah yang ia tempati.<br>C. Sisa cicilan motor yang belum lunas.<br>D. Koleksi jam tangan miliknya.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 28,
+        "Pertanyaan": "Kian ingin mencapai 'Financial Independence, Retire Early' (FIRE). Manakah strategi yang paling fundamental untuk mencapai tujuan tersebut?",
+        "Pilihan Ganda": "A. Memiliki kartu kredit sebanyak mungkin.<br>B. Memaksimalkan tingkat tabungan (savings rate) dan berinvestasi secara agresif.<br>C. Bekerja di perusahaan besar dengan jenjang karir yang jelas.<br>D. Menghabiskan pendapatan untuk menikmati hidup selagi muda.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 29,
+        "Pertanyaan": "Farel menerima warisan berupa rumah. Namun, ia juga harus menanggung biaya PBB tahunan, perawatan, dan asuransi. Dalam konteks arus kas, rumah warisan ini bagi Farel adalah...",
+        "Pilihan Ganda": "A. Aset produktif karena nilainya bisa naik.<br>B. Liabilitas karena secara rutin mengeluarkan uang dari kantongnya.<br>C. Pendapatan pasif.<br>D. Aset dan liabilitas sekaligus, tergantung bagaimana ia mengelolanya.",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 30,
+        "Pertanyaan": "Faraz membuka usaha kafe dengan modal pinjaman bank. Bulan pertama, kafenya ramai dan mendapat laba Rp10 juta. Namun, di rekeningnya hanya tersisa Rp1 juta. Apa penjelasan paling logis untuk perbedaan ini?",
+        "Pilihan Ganda": "A. Terjadi kesalahan perhitungan laba.<br>B. Laba tidak sama dengan arus kas (cash flow); sebagian besar uang mungkin digunakan untuk membayar utang atau membeli stok.<br>C. Karyawannya melakukan korupsi.<br>D. Uang tunai di kasir pasti sama dengan laba yang tercatat.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 31,
+        "Pertanyaan": "Raihan berinvestasi di pasar saham. Pasar tiba-tiba anjlok 30% karena berita ekonomi buruk. Sebagai investor jangka panjang, tindakan yang paling bijak adalah...",
+        "Pilihan Ganda": "A. Panik dan menjual semua sahamnya untuk menghindari kerugian lebih lanjut.<br>B. Tetap tenang, meninjau kembali fundamental investasinya, dan mungkin mempertimbangkan untuk membeli lebih banyak di harga murah.<br>C. Mengabaikan berita sepenuhnya karena pasar pasti akan kembali naik.<br>D. Mengganti semua sahamnya dengan emas.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 32,
+        "Pertanyaan": "Pradipta memiliki rasio utang terhadap pendapatan (Debt-to-Income Ratio) sebesar 50%. Apa artinya ini?",
+        "Pilihan Ganda": "A. Setengah dari total hartanya adalah utang.<br>B. Setengah dari pendapatan bulanannya habis untuk membayar cicilan utang.<br>C. Ia hanya memiliki 50% dari total utang yang bisa ia ajukan.<br>D. Ia 50% lebih kaya dari orang rata-rata.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 33,
+        "Pertanyaan": "Rifai ingin memulai bisnis tanpa modal dari investor luar, hanya menggunakan tabungan pribadinya. Strategi pendanaan ini dikenal sebagai...",
+        "Pilihan Ganda": "A. Venture Capital<br>B. Angel Investing<br>C. Crowdfunding<br>D. Bootstrapping",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 34,
+        "Pertanyaan": "Farel menerima email dari 'pihak bank' yang memintanya mengklik tautan dan memasukkan username, password, serta PIN untuk 'verifikasi data'. Email ini adalah contoh dari upaya penipuan yang disebut...",
+        "Pilihan Ganda": "A. Skema Ponzi<br>B. Social Engineering<br>C. Phishing<br>D. Money Laundering",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 35,
+        "Pertanyaan": "Kian berinvestasi pada reksa dana indeks yang melacak IHSG. Apa keuntungan utama dari jenis investasi ini dibandingkan memilih saham secara individual?",
+        "Pilihan Ganda": "A. Keuntungannya dijamin lebih tinggi dari IHSG.<br>B. Biayanya lebih mahal karena dikelola secara aktif.<br>C. Memberikan diversifikasi instan ke seluruh saham utama di pasar dengan biaya rendah.<br>D. Bebas dari risiko pasar sama sekali.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 36,
+        "Pertanyaan": "Faraz membeli polis asuransi kesehatan dengan premi Rp500.000/bulan. Ia tidak pernah sakit selama setahun dan merasa 'rugi' karena uangnya 'hangus'. Kesalahpahaman Faraz terletak pada...",
+        "Pilihan Ganda": "A. Memilih perusahaan asuransi yang salah.<br>B. Tidak memahami bahwa fungsi asuransi adalah transfer risiko, bukan investasi.<br>C. Seharusnya ia menabung uang tersebut di bank.<br>D. Premi yang ia bayarkan terlalu mahal.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 37,
+        "Pertanyaan": "Di negara tempat Raihan tinggal, terjadi deflasi. Apa dampak yang paling mungkin ia rasakan?",
+        "Pilihan Ganda": "A. Harga barang-barang naik, dan nilai uangnya menurun.<br>B. Harga barang-barang turun, dan orang cenderung menunda belanja, yang bisa memperburuk ekonomi.<br>C. Suku bunga bank akan naik tajam.<br>D. Lapangan pekerjaan akan bertambah pesat.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 38,
+        "Pertanyaan": "Kian memiliki kartu kredit dengan rasio pemakaian (utilization ratio) 90% dari total limit. Bagaimana ini memengaruhi skor kreditnya?",
+        "Pilihan Ganda": "A. Meningkatkan skor kredit karena menunjukkan ia aktif menggunakan kredit.<br>B. Tidak berpengaruh sama sekali terhadap skor kredit.<br>C. Berdampak negatif karena rasio pemakaian yang tinggi dianggap sebagai risiko kredit.<br>D. Bank akan otomatis menaikkan limitnya.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 39,
+        "Pertanyaan": "Rifai sangat yakin dengan analisisnya terhadap saham A. Ia pun mengabaikan semua berita negatif tentang perusahaan tersebut dan hanya mencari informasi yang mendukung keyakinannya. Bias kognitif yang dialami Rifai adalah...",
+        "Pilihan Ganda": "A. Overconfidence Bias<br>B. Confirmation Bias<br>C. Herd Mentality<br>D. Loss Aversion",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 40,
+        "Pertanyaan": "Raihan memiliki tabungan Rp50 juta, motor seharga Rp20 juta, dan utang KPR Rp300 juta. Rumahnya saat ini bernilai Rp400 juta. Berapakah kekayaan bersih (net worth) Raihan?",
+        "Pilihan Ganda": "A. Rp470 juta (total aset).<br>B. Rp170 juta (total aset dikurangi total liabilitas).<br>C. Rp100 juta (nilai rumah dikurangi sisa utang).<br>D. -Rp230 juta (aset lancar dikurangi utang).",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 41,
+        "Pertanyaan": "Farel ingin membeli barang seharga Rp10 juta. Ia bisa menabung Rp1 juta/bulan selama 10 bulan. Jika inflasi 5% per tahun, berapa kira-kira harga barang tersebut 10 bulan lagi?",
+        "Pilihan Ganda": "A. Tetap Rp10 juta.<br>B. Sedikit lebih tinggi dari Rp10 juta.<br>C. Lebih rendah dari Rp10 juta.<br>D. Tidak dapat diprediksi.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 42,
+        "Pertanyaan": "Pradipta berinvestasi pada obligasi negara. Apa risiko utama yang hampir tidak ada pada instrumen ini dibandingkan saham?",
+        "Pilihan Ganda": "A. Risiko Pasar<br>B. Risiko Inflasi<br>C. Risiko Gagal Bayar (Default Risk)<br>D. Risiko Suku Bunga",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 43,
+        "Pertanyaan": "Faraz menjual desain grafis secara online ke klien di luar negeri. Pendapatan yang ia terima dalam Dolar AS. Apa risiko finansial utama yang ia hadapi?",
+        "Pilihan Ganda": "A. Risiko Hukum<br>B. Risiko Nilai Tukar Mata Uang (Kurs)<br>C. Risiko Operasional<br>D. Risiko Kredit",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 44,
+        "Pertanyaan": "Kian menabung Rp1 juta pada 1 Januari. Efek bunga majemuk (compounding effect) akan paling optimal jika bunga dihitung...",
+        "Pilihan Ganda": "A. Tahunan<br>B. Semesteran<br>C. Bulanan<br>D. Harian",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 45,
+        "Pertanyaan": "Rifai memiliki aset yang 'likuid'. Apa artinya?",
+        "Pilihan Ganda": "A. Aset tersebut tahan air.<br>B. Aset tersebut mudah diubah menjadi uang tunai tanpa penurunan nilai yang signifikan.<br>C. Aset tersebut nilainya selalu meningkat.<br>D. Aset tersebut berbentuk cairan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 46,
+        "Pertanyaan": "Pemerintah memberlakukan sistem pajak progresif. Artinya, semakin tinggi penghasilan Farel, maka...",
+        "Pilihan Ganda": "A. Persentase pajak yang ia bayar semakin kecil.<br>B. Jumlah pajak yang ia bayar tetap sama.<br>C. Persentase pajak yang ia bayar semakin besar.<br>D. Ia dibebaskan dari pajak.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 47,
+        "Pertanyaan": "Raihan ingin membeli laptop. Ia membandingkan spesifikasi, garansi, dan ulasan pengguna, bukan hanya harga termurah. Pendekatan yang dilakukan Raihan adalah mencari...",
+        "Pilihan Ganda": "A. Harga Terendah (Lowest Price)<br>B. Nilai Terbaik (Best Value)<br>C. Merek Terkenal (Brand Recognition)<br>D. Penawaran Tercepat (Quickest Deal)",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 48,
+        "Pertanyaan": "Pradipta kehilangan keuntungan potensial karena ragu-ragu untuk berinvestasi saat pasar sedang turun. Keraguan ini seringkali didorong oleh bias kognitif...",
+        "Pilihan Ganda": "A. Overconfidence<br>B. Loss Aversion (Menghindari Kerugian)<br>C. Anchoring<br>D. Herd Mentality",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 49,
+        "Pertanyaan": "Kian meminjam uang dari pinjaman online ilegal. Apa risiko terbesar yang ia hadapi dibandingkan meminjam dari lembaga legal?",
+        "Pilihan Ganda": "A. Proses pencairan yang terlalu cepat.<br>B. Suku bunga yang sangat tinggi dan metode penagihan yang tidak etis.<br>C. Persyaratan yang terlalu mudah.<br>D. Kurangnya promosi.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 50,
+        "Pertanyaan": "Faraz membuat surat wasiat meskipun usianya masih muda dan sehat. Tindakan ini merupakan bagian dari...",
+        "Pilihan Ganda": "A. Perencanaan Pajak<br>B. Perencanaan Pensiun<br>C. Perencanaan Waris (Estate Planning)<br>D. Manajemen Risiko",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 51,
+        "Pertanyaan": "Rifai membeli saham perusahaan yang fundamentalnya buruk hanya karena harganya sedang naik daun dan banyak dibicarakan di media sosial. Perilaku Rifai adalah contoh dari...",
+        "Pilihan Ganda": "A. Analisis Fundamental<br>B. Investasi Jangka Panjang<br>C. Mentalitas Gerombolan (Herd Mentality)<br>D. Strategi Kontrarian",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 52,
+        "Pertanyaan": "Pradipta menempatkan dananya di Deposito, Obligasi, dan Saham. Tindakan menyebar dana ke berbagai jenis aset ini disebut...",
+        "Pilihan Ganda": "A. Alokasi Aset (Asset Allocation)<br>B. Konsentrasi Portofolio<br>C. Spekulasi<br>D. Pengambilan Untung (Profit Taking)",
+        "Kunci Jawaban": "A"
+    },
+    {
+        "Nomor": 53,
+        "Pertanyaan": "Farel kesulitan melunasi utang-utangnya. Ia menghubungi lembaga mediasi untuk menegosiasikan ulang utangnya dengan kreditur. Proses ini disebut...",
+        "Pilihan Ganda": "A. Konsolidasi Utang<br>B. Restrukturisasi Utang<br>C. Penghapusan Utang<br>D. Gali Lubang Tutup Lubang",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 54,
+        "Pertanyaan": "Kian berinvestasi di aset kripto. Manakah karakteristik yang paling membedakan aset ini dari saham tradisional?",
+        "Pilihan Ganda": "A. Dijamin oleh pemerintah.<br>B. Memiliki volatilitas yang cenderung sangat tinggi dan tidak memiliki underlying asset yang jelas.<br>C. Memberikan dividen secara rutin.<br>D. Hanya bisa dibeli oleh investor profesional.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 55,
+        "Pertanyaan": "Raihan memiliki tujuan keuangan 'membeli rumah dalam 5 tahun'. Manakah dari tujuan berikut yang paling memenuhi kriteria SMART (Specific, Measurable, Achievable, Relevant, Time-bound)?",
+        "Pilihan Ganda": "A. 'Menjadi kaya suatu hari nanti.'<br>B. 'Menabung sebanyak mungkin untuk masa depan.'<br>C. 'Mengumpulkan DP rumah Rp150 juta dalam 5 tahun dengan menabung Rp2,5 juta per bulan.'<br>D. 'Membeli rumah mewah di pusat kota secepatnya.'",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 56,
+        "Pertanyaan": "Faraz membeli waralaba (franchise) minuman kekinian. Apa keuntungan utama dari model bisnis ini dibandingkan memulai dari nol?",
+        "Pilihan Ganda": "A. Kebebasan penuh untuk berkreasi dengan menu dan merek.<br>B. Biaya awal yang lebih rendah.<br>C. Mendapatkan model bisnis, merek, dan dukungan operasional yang sudah terbukti.<br>D. Tidak ada risiko kegagalan sama sekali.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 57,
+        "Pertanyaan": "Rifai berinvestasi pada emas. Fungsi utama emas dalam sebuah portofolio investasi adalah sebagai...",
+        "Pilihan Ganda": "A. Aset untuk menghasilkan arus kas rutin.<br>B. Instrumen spekulatif dengan pertumbuhan cepat.<br>C. Aset lindung nilai (hedging) terhadap inflasi dan ketidakpastian ekonomi.<br>D. Saham dari perusahaan pertambangan.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 58,
+        "Pertanyaan": "Pradipta membuka rekening di bank digital. Apa perbedaan utama antara bank digital dan bank konvensional?",
+        "Pilihan Ganda": "A. Bank digital tidak diatur oleh Otoritas Jasa Keuangan (OJK).<br>B. Bank digital umumnya beroperasi tanpa cabang fisik dan mengandalkan aplikasi mobile.<br>C. Suku bunga tabungan di bank konvensional selalu lebih tinggi.<br>D. Bank digital hanya melayani nasabah kaya.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 59,
+        "Pertanyaan": "Farel menerima gaji dan langsung membayar semua tagihan dan menyisihkan untuk tabungan sebelum digunakan untuk belanja. Pendekatan ini dikenal dengan istilah...",
+        "Pilihan Ganda": "A. 'Bayar Nanti Saja'<br>B. 'Hidup dari Gaji ke Gaji'<br>C. 'Bayar Diri Sendiri Terlebih Dahulu' (Pay Yourself First)<br>D. 'Anggaran Fleksibel'",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 60,
+        "Pertanyaan": "Kian adalah seorang 'freelancer'. Apa tantangan keuangan terbesar yang khas bagi profesinya?",
+        "Pilihan Ganda": "A. Gaji yang terlalu besar.<br>B. Jam kerja yang fleksibel.<br>C. Pendapatan yang tidak menentu dan tidak adanya tunjangan seperti karyawan tetap.<br>D. Terlalu banyak pilihan proyek.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 61,
+        "Pertanyaan": "Raihan ingin memulai investasi saham tapi tidak punya waktu untuk menganalisis. Manajer investasi menyarankan Exchange Traded Fund (ETF). Apa itu ETF?",
+        "Pilihan Ganda": "A. Saham tunggal dari perusahaan teknologi besar.<br>B. Sekumpulan saham atau aset lain yang diperdagangkan seperti saham di bursa.<br>C. Jenis tabungan dengan bunga tinggi.<br>D. Pinjaman dari bursa efek.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 62,
+        "Pertanyaan": "Faraz membeli barang dengan kartu kredit. Kapan ia akan dikenakan bunga?",
+        "Pilihan Ganda": "A. Langsung saat transaksi dilakukan.<br>B. Jika ia tidak melunasi seluruh tagihan sebelum tanggal jatuh tempo.<br>C. Hanya jika ia menggunakan kartunya di luar negeri.<br>D. Tidak pernah, karena kartu kredit bebas bunga.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 63,
+        "Pertanyaan": "Rifai sedang mengalami stagflasi di negaranya. Apa kondisi yang ia hadapi?",
+        "Pilihan Ganda": "A. Pertumbuhan ekonomi pesat dan inflasi rendah.<br>B. Pertumbuhan ekonomi melambat (stagnan) sementara inflasi tinggi.<br>C. Harga-harga turun dan banyak pengangguran.<br>D. Ekonomi stabil dan harga tidak berubah.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 64,
+        "Pertanyaan": "Pradipta ingin membeli mobil. Penjual menawarkan cicilan dengan 'bunga 0%'. Sebagai konsumen cerdas, apa yang harus Pradipta waspadai?",
+        "Pilihan Ganda": "A. Penawaran itu pasti yang terbaik dan harus segera diambil.<br>B. Kemungkinan biaya bunga sudah dimasukkan ke dalam harga jual mobil atau ada biaya tersembunyi lainnya.<br>C. Mobil tersebut mungkin berkualitas buruk.<br>D. Ia tidak perlu khawatir tentang apa pun karena bunganya nol.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 65,
+        "Pertanyaan": "Farel bekerja dan gajinya dipotong untuk iuran BPJS Ketenagakerjaan (program JHT). Apa fungsi utama dari iuran Jaminan Hari Tua (JHT) tersebut?",
+        "Pilihan Ganda": "A. Untuk asuransi kesehatan saat ia sakit.<br>B. Sebagai tabungan yang bisa diambil saat ia pensiun atau berhenti kerja.<br>C. Untuk membayar gaji karyawan BPJS.<br>D. Untuk dana liburan tahunan perusahaan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 66,
+        "Pertanyaan": "Kian sedang menghitung 'amortisasi' pinjaman KPR-nya. Apa yang sebenarnya ia hitung?",
+        "Pilihan Ganda": "A. Total bunga yang akan ia bayar selama masa pinjaman.<br>B. Proses pengurangan utang secara bertahap melalui pembayaran rutin yang mencakup pokok dan bunga.<br>C. Nilai jual kembali rumahnya di masa depan.<br>D. Biaya-biaya tambahan saat pengajuan KPR.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 67,
+        "Pertanyaan": "Raihan berinvestasi pada 'saham blue chip'. Apa karakteristik umum dari saham jenis ini?",
+        "Pilihan Ganda": "A. Saham dari perusahaan kecil dengan potensi pertumbuhan sangat tinggi.<br>B. Saham dengan harga di bawah Rp50 (saham goceng).<br>C. Saham dari perusahaan besar, mapan, dan memiliki reputasi keuangan yang kuat.<br>D. Saham yang baru saja melakukan Initial Public Offering (IPO).",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 68,
+        "Pertanyaan": "Faraz mendapatkan penghasilan dari menyewakan properti. Jenis pendapatan ini digolongkan sebagai...",
+        "Pilihan Ganda": "A. Pendapatan Aktif<br>B. Pendapatan Pasif<br>C. Capital Gain<br>D. Dividen",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 69,
+        "Pertanyaan": "Rifai ingin meminjam uang. Lembaga keuangan akan memeriksa 'SLIK OJK' (dulu BI Checking) miliknya. Apa tujuan utama dari pemeriksaan ini?",
+        "Pilihan Ganda": "A. Untuk mengetahui saldo tabungan Rifai.<br>B. Untuk melihat riwayat dan reputasi kredit Rifai, apakah ia sering menunggak atau tidak.<br>C. Untuk menawarkan produk asuransi kepadanya.<br>D. Untuk memverifikasi alamat rumahnya.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 70,
+        "Pertanyaan": "Pradipta menjual kue buatannya secara online. Biaya bahan baku per kue adalah Rp5.000. Ia menjualnya seharga Rp15.000. Selisih Rp10.000 ini disebut...",
+        "Pilihan Ganda": "A. Pendapatan Bersih<br>B. Margin Laba Kotor (Gross Profit Margin)<br>C. Arus Kas<br>D. Omzet",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 71,
+        "Pertanyaan": "Farel mendengar tentang 'yield curve inversion'. Fenomena ini seringkali dianggap sebagai pertanda...",
+        "Pilihan Ganda": "A. Pasar saham akan bullish (naik).<br>B. Resesi ekonomi akan terjadi di masa depan.<br>C. Inflasi akan turun drastis.<br>D. Pemerintah akan menurunkan pajak.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 72,
+        "Pertanyaan": "Kian membeli produk asuransi yang digabung dengan investasi (Unit Link). Apa potensi kerugian utama dari produk hibrida seperti ini?",
+        "Pilihan Ganda": "A. Preminya lebih murah dari asuransi murni.<br>B. Hasil investasinya dijamin selalu untung.<br>C. Biaya akuisisi dan administrasi yang tinggi seringkali mengurangi hasil investasi, dan proteksinya tidak semaksimal asuransi murni.<br>D. Tidak bisa dicairkan sebelum 20 tahun.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 73,
+        "Pertanyaan": "Raihan ingin berinvestasi di pasar modal syariah. Apa prinsip utama yang membedakannya dari pasar modal konvensional?",
+        "Pilihan Ganda": "A. Hanya boleh diakses oleh investor muslim.<br>B. Menghindari saham perusahaan yang bisnisnya mengandung unsur haram (alkohol, riba, judi) dan melalui proses screening syariah.<br>C. Keuntungannya selalu lebih tinggi.<br>D. Tidak ada risiko sama sekali.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 74,
+        "Pertanyaan": "Faraz memiliki beberapa aset. Manakah yang termasuk 'aset tidak berwujud' (intangible asset)?",
+        "Pilihan Ganda": "A. Rumah tinggalnya.<br>B. Mobil yang ia kendarai.<br>C. Merek dagang (brand) dari bisnis yang ia bangun.<br>D. Emas batangan yang ia simpan.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 75,
+        "Pertanyaan": "Rifai sedang mempertimbangkan untuk melakukan 'refinancing' KPR-nya. Apa tujuan utama dari tindakan ini?",
+        "Pilihan Ganda": "A. Untuk memperpanjang masa cicilan tanpa mengubah suku bunga.<br>B. Untuk menjual rumahnya kepada bank.<br>C. Untuk mengganti pinjaman lama dengan pinjaman baru yang menawarkan suku bunga lebih rendah atau syarat yang lebih baik.<br>D. Untuk mendapatkan pinjaman tambahan tanpa jaminan.",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 76,
+        "Pertanyaan": "Pradipta menerima warisan saham dari kakeknya. Saham tersebut dibeli kakeknya 20 tahun lalu seharga Rp100 per lembar dan kini nilainya Rp5.000 per lembar. Jika Pradipta menjualnya, ia harus membayar pajak atas...",
+        "Pilihan Ganda": "A. Harga jual Rp5.000 per lembar.<br>B. Keuntungan modal (capital gain) sebesar Rp4.900 per lembar.<br>C. Harga beli Rp100 per lembar.<br>D. Tidak ada pajak karena itu adalah warisan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 77,
+        "Pertanyaan": "Farel ingin memulai bisnis tapi modalnya kurang. Ia mempresentasikan idenya di sebuah platform online untuk menggalang dana dari banyak orang. Metode pendanaan ini adalah...",
+        "Pilihan Ganda": "A. Pinjaman Bank<br>B. Bootstrapping<br>C. Crowdfunding<br>D. Venture Capital",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 78,
+        "Pertanyaan": "Kian sedang mempelajari 'Rule of 72'. Apa kegunaan dari aturan praktis ini dalam keuangan?",
+        "Pilihan Ganda": "A. Untuk menghitung cicilan bulanan KPR.<br>B. Untuk memperkirakan berapa tahun yang dibutuhkan agar nilai investasi menjadi dua kali lipat.<br>C. Untuk menentukan skor kredit seseorang.<br>D. Untuk menghitung jumlah pajak penghasilan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 79,
+        "Pertanyaan": "Raihan membeli produk 'structured note' yang ditawarkan oleh bank. Apa karakteristik utama dari produk keuangan kompleks ini?",
+        "Pilihan Ganda": "A. Sangat aman dan cocok untuk pemula.<br>B. Merupakan produk derivatif yang menggabungkan obligasi dengan instrumen lain, dengan struktur imbal hasil dan risiko yang spesifik.<br>C. Sama seperti tabungan berjangka.<br>D. Dijamin oleh Lembaga Penjamin Simpanan (LPS).",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 80,
+        "Pertanyaan": "Faraz berinvestasi di perusahaan yang membagikan dividen. Tanggal di mana investor harus tercatat sebagai pemilik saham untuk berhak menerima dividen disebut...",
+        "Pilihan Ganda": "A. Cum Date<br>B. Ex-Date<br>C. Recording Date<br>D. Payment Date",
+        "Kunci Jawaban": "C"
+    },
+    {
+        "Nomor": 81,
+        "Pertanyaan": "Rifai melihat laporan keuangan perusahaan dan menemukan istilah 'EBITDA'. Apa yang diukur oleh metrik ini?",
+        "Pilihan Ganda": "A. Laba bersih perusahaan setelah pajak.<br>B. Kinerja operasional perusahaan sebelum memperhitungkan bunga, pajak, depresiasi, dan amortisasi.<br>C. Total utang perusahaan.<br>D. Jumlah kas yang dimiliki perusahaan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 82,
+        "Pertanyaan": "Pradipta ingin melindungi nilai portofolio sahamnya dari potensi penurunan pasar. Ia bisa menggunakan instrumen derivatif seperti... untuk melakukan 'hedging'.",
+        "Pilihan Ganda": "A. Opsi Jual (Put Option)<br>B. Opsi Beli (Call Option)<br>C. Saham Biasa<br>D. Obligasi",
+        "Kunci Jawaban": "A"
+    },
+    {
+        "Nomor": 83,
+        "Pertanyaan": "Farel berpendapat bahwa 'cash is king'. Dalam konteks bisnis, filosofi ini menekankan pentingnya...",
+        "Pilihan Ganda": "A. Memiliki laba yang tinggi di atas kertas.<br>B. Menjaga likuiditas dan arus kas yang sehat untuk kelangsungan operasional.<br>C. Memiliki aset tetap yang banyak.<br>D. Menghindari utang sama sekali.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 84,
+        "Pertanyaan": "Kian membandingkan dua reksa dana. Reksa Dana A memiliki 'expense ratio' 2%, sementara Reksa Dana B 0.5%. Jika kinerja keduanya identik, mana yang lebih baik?",
+        "Pilihan Ganda": "A. Reksa Dana A, karena biaya yang lebih tinggi berarti manajer investasinya lebih baik.<br>B. Reksa Dana B, karena biaya yang lebih rendah akan menghasilkan keuntungan bersih yang lebih besar bagi investor.<br>C. Tidak ada bedanya, karena selisihnya sangat kecil.<br>D. Tergantung pada jumlah dana yang diinvestasikan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 85,
+        "Pertanyaan": "Raihan adalah 'accredited investor' menurut definisi regulator. Apa artinya ini?",
+        "Pilihan Ganda": "A. Ia memiliki sertifikasi sebagai analis keuangan.<br>B. Ia memenuhi syarat kekayaan atau pendapatan tertentu yang memungkinkannya berinvestasi pada instrumen yang lebih berisiko dan tidak ditawarkan ke publik.<br>C. Ia selalu membuat keputusan investasi yang benar.<br>D. Ia bekerja untuk Otoritas Jasa Keuangan (OJK).",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 86,
+        "Pertanyaan": "Faraz membaca berita bahwa bank sentral melakukan 'quantitative easing'. Apa tindakan yang dilakukan bank sentral?",
+        "Pilihan Ganda": "A. Menaikkan suku bunga secara drastis.<br>B. Membeli aset keuangan (seperti obligasi pemerintah) dari pasar untuk meningkatkan jumlah uang beredar dan mendorong ekonomi.<br>C. Memperketat syarat pemberian kredit.<br>D. Menjual cadangan emasnya.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 87,
+        "Pertanyaan": "Rifai memiliki portofolio yang 'beta'-nya 1.5. Apa artinya ini?",
+        "Pilihan Ganda": "A. Portofolionya 50% lebih tidak stabil (volatile) dibandingkan pasar secara keseluruhan.<br>B. Portofolionya 1.5% lebih aman dari pasar.<br>C. Keuntungannya dijamin 1.5 kali lebih tinggi dari pasar.<br>D. Portofolionya tidak memiliki risiko.",
+        "Kunci Jawaban": "A"
+    },
+    {
+        "Nomor": 88,
+        "Pertanyaan": "Pradipta berinvestasi pada perusahaan yang memiliki 'economic moat' yang kuat. Apa yang dimaksud dengan 'economic moat'?",
+        "Pilihan Ganda": "A. Perusahaan tersebut berlokasi di dekat parit atau sungai.<br>B. Keunggulan kompetitif yang berkelanjutan yang melindungi perusahaan dari pesaing.<br>C. Utang perusahaan yang sangat besar.<br>D. Kantor pusat perusahaan yang megah.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 89,
+        "Pertanyaan": "Farel ingin mendanai bisnisnya dengan 'venture capital'. Apa yang dicari oleh seorang venture capitalist sebagai imbalan atas pendanaannya?",
+        "Pilihan Ganda": "A. Pembayaran kembali pinjaman beserta bunganya.<br>B. Kepemilikan saham (ekuitas) di perusahaan Farel.<br>C. Jaminan aset pribadi Farel.<br>D. Posisi sebagai CEO di perusahaan tersebut.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 90,
+        "Pertanyaan": "Kian menganalisis laporan keuangan dan melihat 'price-to-earnings (P/E) ratio' sebuah saham sangat tinggi. Apa indikasi dari P/E ratio yang tinggi?",
+        "Pilihan Ganda": "A. Saham tersebut murah dan merupakan kesempatan beli yang bagus.<br>B. Investor memiliki ekspektasi pertumbuhan pendapatan yang tinggi di masa depan untuk perusahaan tersebut.<br>C. Perusahaan tersebut tidak memiliki utang.<br>D. Perusahaan tersebut pasti akan membagikan dividen yang besar.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 91,
+        "Pertanyaan": "Raihan melakukan 'short selling' pada saham XYZ. Apa yang ia harapkan terjadi?",
+        "Pilihan Ganda": "A. Harga saham XYZ akan naik.<br>B. Harga saham XYZ akan turun, sehingga ia bisa membelinya kembali di harga lebih rendah untuk mendapat keuntungan.<br>C. Perusahaan XYZ akan membagikan dividen.<br>D. Saham XYZ akan melakukan stock split.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 92,
+        "Pertanyaan": "Faraz membeli obligasi korporasi dengan peringkat 'AAA'. Apa arti dari peringkat ini?",
+        "Pilihan Ganda": "A. Obligasi tersebut memiliki risiko gagal bayar yang sangat rendah.<br>B. Obligasi tersebut menawarkan kupon bunga yang paling tinggi.<br>C. Obligasi tersebut bersifat spekulatif (junk bond).<br>D. Obligasi tersebut tidak bisa diperjualbelikan.",
+        "Kunci Jawaban": "A"
+    },
+    {
+        "Nomor": 93,
+        "Pertanyaan": "Rifai memiliki beberapa jenis investasi. Manakah yang memiliki 'preferential tax treatment' (perlakuan pajak yang lebih menguntungkan) di banyak negara?",
+        "Pilihan Ganda": "A. Bunga dari tabungan biasa.<br>B. Keuntungan modal (capital gain) dari investasi jangka panjang.<br>C. Gaji dari pekerjaan.<br>D. Keuntungan dari perjudian.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 94,
+        "Pertanyaan": "Pradipta berinvestasi pada 'Real Estate Investment Trust' (REIT). Secara sederhana, ia sedang berinvestasi pada...",
+        "Pilihan Ganda": "A. Perusahaan konstruksi bangunan.<br>B. Portofolio properti yang menghasilkan pendapatan (seperti mal, hotel, apartemen) tanpa harus membeli propertinya secara fisik.<br>C. Saham perusahaan pengembang perumahan.<br>D. Tanah kosong di pedesaan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 95,
+        "Pertanyaan": "Farel bingung antara 'saving' dan 'investing'. Apa perbedaan fundamental antara keduanya?",
+        "Pilihan Ganda": "A. Tidak ada bedanya, keduanya adalah cara menyimpan uang.<br>B. 'Saving' adalah menyimpan uang dengan risiko rendah untuk tujuan jangka pendek, sementara 'investing' adalah menempatkan uang pada aset dengan risiko untuk potensi pertumbuhan jangka panjang.<br>C. 'Investing' lebih aman daripada 'saving'.<br>D. 'Saving' hanya bisa dilakukan di bank, sementara 'investing' hanya di pasar saham.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 96,
+        "Pertanyaan": "Kian membaca bahwa sebuah perusahaan akan melakukan 'stock split' 2-for-1. Jika Kian memiliki 100 lembar saham seharga Rp10.000 per lembar, apa yang akan terjadi setelah stock split?",
+        "Pilihan Ganda": "A. Ia akan memiliki 100 lembar saham seharga Rp20.000 per lembar.<br>B. Ia akan memiliki 200 lembar saham seharga Rp5.000 per lembar.<br>C. Nilai total investasinya akan menjadi dua kali lipat.<br>D. Tidak ada yang berubah.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 97,
+        "Pertanyaan": "Raihan menerima 'golden handshake' dari perusahaannya. Apa itu?",
+        "Pilihan Ganda": "A. Bonus tahunan yang diterima semua karyawan.<br>B. Paket pesangon yang besar dan menarik yang ditawarkan kepada seorang eksekutif untuk pensiun dini atau meninggalkan perusahaan.<br>C. Jabat tangan dari CEO perusahaan.<br>D. Opsi saham yang belum bisa dicairkan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 98,
+        "Pertanyaan": "Faraz sedang menganalisis 'arus kas bebas' (free cash flow) sebuah perusahaan. Mengapa metrik ini sangat penting bagi investor?",
+        "Pilihan Ganda": "A. Menunjukkan total penjualan perusahaan.<br>B. Menggambarkan kas yang tersisa setelah perusahaan membiayai operasional dan belanja modal, yang bisa digunakan untuk membayar utang, dividen, atau investasi baru.<br>C. Sama dengan laba bersih perusahaan.<br>D. Menunjukkan seberapa populer produk perusahaan.",
+        "Kunci Jawaban": "B"
+    },
+    {
+        "Nomor": 99,
+        "Pertanyaan": "Pradipta, Raihan, dan Kian berdebat. Pradipta fokus pada 'aset'. Raihan pada 'arus kas positif'. Kian pada 'bebas utang'. Siapa yang paling benar mengenai kunci kesehatan finansial?",
+        "Pilihan Ganda": "A. Pradipta, karena aset adalah segalanya.<br>B. Raihan, karena tanpa arus kas, aset bisa terpaksa dijual.<br>C. Kian, karena utang adalah sumber segala masalah.<br>D. Tidak ada yang mutlak benar; kesehatan finansial adalah keseimbangan dinamis dari ketiganya.",
+        "Kunci Jawaban": "D"
+    },
+    {
+        "Nomor": 100,
+        "Pertanyaan": "Setelah mempelajari banyak konsep, Faraz menyadari bahwa tujuan akhir literasi finansial bukanlah sekadar mengakumulasi kekayaan, melainkan...",
+        "Pilihan Ganda": "A. Untuk bisa mengalahkan pasar saham secara konsisten.<br>B. Untuk bisa pensiun di usia 30 tahun.<br>C. Untuk menggunakan uang sebagai alat untuk mencapai kehidupan yang lebih baik dan sejahtera (financial well-being).<br>D. Untuk memiliki pengetahuan yang bisa dipamerkan kepada orang lain.",
+        "Kunci Jawaban": "C"
+    }
+]

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Quiz Race - LIFIN</title>
+    
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Memuat Font Baloo 2 dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'baloo': ['"Baloo 2"', 'cursive'],
+                    },
+                    colors: {
+                        'lifin-blue': '#04b3e3',
+                        'lifin-dark-blue': '#004b75',
+                        'lifin-pink': '#eeace6',
+                        'lifin-red': '#ff6b6b',
+                        'lifin-yellow': '#ffc72c',
+                        'lifin-purple': '#9b59b6',
+                    },
+                    keyframes: {
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+                            '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
+                        },
+                        rollOut: {
+                            '0%': { transform: 'translateY(-150px) scale(0)', opacity: 0 },
+                            '60%': { transform: 'translateY(0) scale(1)', opacity: 1 },
+                            '100%': { transform: 'translateY(0) scale(1) rotate(360deg)', opacity: 1 },
+                        },
+                        popIn: {
+                            '0%': { transform: 'scale(0.5)', opacity: 0 },
+                            '100%': { transform: 'scale(1)', opacity: 1 },
+                        }
+                    },
+                    animation: {
+                        'shake': 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both',
+                        'roll-out': 'rollOut 1s ease-out forwards',
+                        'pop-in': 'popIn 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            transition: background-color 0.5s ease-out;
+            overflow: hidden;
+        }
+        #gacha-lever {
+            transition: transform 0.2s ease;
+        }
+        #gacha-lever.pulled {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Halaman -->
+    <header class="fixed top-0 left-0 w-full h-[90px] bg-white flex items-center justify-between px-6 lg:px-20 z-50" 
+            style="box-shadow: 0 4px 20px 0 rgba(4,179,227,0.2);">
+        <div class="flex items-center">
+            <img src="https://placehold.co/100x100/04b3e3/FFFFFF?text=LIFIN" 
+                 class="w-[75px] object-cover cursor-pointer" 
+                 alt="logolifin" 
+                 onclick="window.location.href='https://www.lifin.fun/'">
+        </div>
+        <button onclick="window.location.href='/LIFIN/dashboard.html'"
+          class="bg-lifin-red text-white text-lg font-extrabold px-5 py-2 rounded-full font-baloo transition-transform duration-200 hover:scale-105" 
+          style="box-shadow: 0 5px 0px 0 #d44f4f;">
+          Kembali
+        </button>
+    </header>
+
+    <main class="pt-[90px] flex flex-col justify-center items-center min-h-screen">
+        <!-- Judul Utama -->
+        <div class="text-center mb-6 px-4">
+            <h1 id="game-title" class="font-baloo text-lifin-blue text-4xl lg:text-5xl font-extrabold tracking-wider transition-all duration-300">
+                MESIN GACHA FINNY
+            </h1>
+            <p class="max-w-2xl mx-auto mt-1 text-gray-600 text-lg h-6">
+                Tarik tuas untuk mendapatkan game!
+            </p>
+        </div>
+
+        <!-- Mesin Gacha -->
+        <div class="relative w-[320px] h-[450px] flex justify-center">
+            <!-- Tuas -->
+            <div id="gacha-lever" class="absolute top-1/2 -right-20 w-10 h-32 cursor-pointer group">
+                <div class="w-full h-10 bg-gray-300 rounded-r-lg"></div>
+                <div class="absolute top-0 right-0 w-10 h-10 bg-red-500 rounded-full shadow-md group-hover:bg-red-600"></div>
+            </div>
+            
+            <!-- Body Mesin -->
+            <div id="gacha-machine" class="w-full h-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col">
+                <!-- Kaca Atas -->
+                <div class="h-3/5 bg-blue-100/50 border-b-8 border-gray-200 flex items-center justify-center relative">
+                    <img src="https://placehold.co/150x150/ffffff/04b3e3?text=FINNY" alt="Finny Mascot" class="w-32 h-32 rounded-full opacity-50">
+                     <!-- Tempat Bola Keluar -->
+                    <div id="capsule-container" class="absolute bottom-[-50px] w-full flex justify-center"></div>
+                </div>
+                <!-- Slot Bawah -->
+                <div class="h-2/5 bg-gray-100 flex items-center justify-center">
+                    <div class="w-32 h-16 bg-gray-300 rounded-lg shadow-inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hasil Game (Modal) -->
+        <div id="result-modal" class="hidden fixed inset-0 bg-black/30 z-50 flex items-center justify-center p-4">
+            <div id="result-card" class="w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl opacity-0">
+                <!-- Konten akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const games = [
+                { title: 'Akuntan Cilik', subtitle: 'Adu cepat berhitung!', href: './akuntan-cilik.html', color: '#04b3e3', bgColor: '#e0f7fa', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>` },
+                { title: 'Cuanesia', subtitle: 'Kebutuhan vs Keinginan.', href: './cuanesia.html', color: '#004b75', bgColor: '#e0e8f0', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>` },
+                { title: 'Detektif Cuan', subtitle: 'Tebak fakta atau hoaks!', href: './true-false.html', color: '#eeace6', bgColor: '#fbe4f8', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>` },
+                { title: 'Split Smart', subtitle: 'Kelompokkan pengeluaran.', href: './split-smart.html', color: '#ff6b6b', bgColor: '#ffeeee', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>` },
+                { title: 'Penjelajah Uang', subtitle: 'Jelajahi sejarah uang.', href: './penjelajah-uang.html', color: '#ffc72c', bgColor: '#fff8e1', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>` },
+                { title: 'Kasus Cuan', subtitle: 'Pecahkan studi kasus finansial.', href: './kasus-cuan.html', color: '#9b59b6', bgColor: '#f3e5f5', icon: `<svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>` }
+            ];
+
+            const lever = document.getElementById('gacha-lever');
+            const machine = document.getElementById('gacha-machine');
+            const capsuleContainer = document.getElementById('capsule-container');
+            const resultModal = document.getElementById('result-modal');
+            const resultCard = document.getElementById('result-card');
+            let isSpinning = false;
+
+            lever.addEventListener('click', () => {
+                if (isSpinning) return;
+                isSpinning = true;
+
+                lever.classList.add('pulled');
+                machine.classList.add('animate-shake');
+                
+                setTimeout(() => {
+                    lever.classList.remove('pulled');
+                    const randomGame = games[Math.floor(Math.random() * games.length)];
+                    releaseCapsule(randomGame);
+                }, 800);
+
+                machine.addEventListener('animationend', () => {
+                    machine.classList.remove('animate-shake');
+                }, { once: true });
+            });
+
+            function releaseCapsule(game) {
+                capsuleContainer.innerHTML = '';
+                const capsule = document.createElement('div');
+                capsule.className = 'w-16 h-16 rounded-full shadow-lg animate-roll-out';
+                capsule.style.backgroundColor = game.color;
+                capsuleContainer.appendChild(capsule);
+
+                capsule.addEventListener('animationend', () => {
+                    showResult(game);
+                    capsuleContainer.innerHTML = '';
+                }, { once: true });
+            }
+
+            function showResult(game) {
+                document.body.style.backgroundColor = game.bgColor;
+                resultCard.style.backgroundColor = game.color;
+                resultCard.innerHTML = `
+                    <div class="h-48 flex items-center justify-center p-6 bg-black/10">
+                        ${game.icon}
+                    </div>
+                    <div class="p-6 bg-white text-center">
+                        <h3 class="font-extrabold text-3xl text-gray-800">${game.title}</h3>
+                        <p class="font-semibold text-gray-500 mt-1">${game.subtitle}</p>
+                        <div class="mt-6 flex gap-4">
+                            <button id="spin-again-btn" class="w-full bg-gray-200 text-gray-700 font-bold py-3 rounded-full transition-transform hover:scale-105">Putar Lagi</button>
+                            <a href="${game.href}" class="w-full bg-green-500 text-white font-bold py-3 rounded-full text-center transition-transform hover:scale-105">Mainkan!</a>
+                        </div>
+                    </div>
+                `;
+                resultModal.classList.remove('hidden');
+                resultCard.classList.add('animate-pop-in');
+
+                document.getElementById('spin-again-btn').onclick = () => {
+                    resultCard.classList.remove('animate-pop-in');
+                    resultModal.classList.add('hidden');
+                    isSpinning = false;
+                };
+            }
+        });
+    </script>
+</body>
+</html>

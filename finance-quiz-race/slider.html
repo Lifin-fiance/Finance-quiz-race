@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Quiz Race - LIFIN</title>
+    
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Memuat Font Baloo 2 dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'baloo': ['"Baloo 2"', 'cursive'],
+                    },
+                    colors: {
+                        'lifin-blue': '#04b3e3',
+                        'lifin-dark-blue': '#004b75',
+                        'lifin-pink': '#eeace6',
+                        'lifin-red': '#ff6b6b',
+                        'lifin-yellow': '#ffc72c',
+                        'lifin-purple': '#9b59b6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mengaplikasikan font Baloo 2 sebagai font default */
+        body {
+            font-family: 'Baloo 2', cursive;
+            transition: background-color 0.5s ease-out;
+            overflow-x: hidden;
+        }
+
+        /* --- CSS untuk Carousel --- */
+        .game-carousel-container {
+            perspective: 1000px;
+        }
+        
+        .game-carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform-style: preserve-3d;
+        }
+
+        .game-card {
+            flex: 0 0 280px; /* Lebar setiap kartu */
+            margin: 0 20px;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform: scale(0.85) rotateY(45deg);
+            opacity: 0.6;
+        }
+
+        /* Styling untuk kartu yang aktif/di tengah */
+        .game-card.active {
+            transform: scale(1.05) rotateY(0);
+            opacity: 1;
+        }
+        
+        /* Styling untuk kartu di sebelah kiri kartu aktif */
+        .game-card.left {
+            transform: scale(0.85) rotateY(-45deg);
+        }
+        
+        /* Styling untuk kartu di sebelah kanan kartu aktif */
+        .game-card.right {
+             transform: scale(0.85) rotateY(45deg);
+        }
+        
+        /* Pola tekstur untuk bagian atas kartu */
+        .card-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Halaman -->
+    <header class="fixed top-0 left-0 w-full h-[90px] bg-white flex items-center justify-between px-6 lg:px-20 z-50" 
+            style="box-shadow: 0 4px 20px 0 rgba(4,179,227,0.2);">
+        <div class="flex items-center">
+            <img src="https://placehold.co/100x100/04b3e3/FFFFFF?text=LIFIN" 
+                 class="w-[75px] object-cover cursor-pointer" 
+                 alt="logolifin" 
+                 onclick="window.location.href='https://www.lifin.fun/'">
+        </div>
+        
+        <button onclick="window.location.href='/LIFIN/dashboard.html'"
+          class="bg-lifin-red text-white text-lg font-extrabold px-5 py-2 rounded-full font-baloo transition-transform duration-200 hover:scale-105" 
+          style="box-shadow: 0 5px 0px 0 #d44f4f;">
+          Kembali
+        </button>
+    </header>
+
+    <main class="pt-[100px] pb-16 flex flex-col justify-center min-h-screen">
+        <!-- Judul Utama -->
+        <div class="text-center mb-8 px-4">
+            <h1 id="game-title" class="font-baloo text-lifin-blue text-4xl lg:text-5xl font-extrabold tracking-wider transition-colors duration-500">
+                FINANCE QUIZ RACE
+            </h1>
+            <p id="game-subtitle" class="max-w-2xl mx-auto mt-2 text-gray-600 text-lg transition-opacity duration-500">
+                Geser untuk memilih game favoritmu!
+            </p>
+        </div>
+
+        <!-- Kontainer Carousel Game -->
+        <div class="game-carousel-container w-full h-[400px] flex items-center justify-center relative">
+            <div id="carousel-track" class="game-carousel-track h-full items-center">
+                <!-- Data game akan dimasukkan oleh JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Tombol Navigasi -->
+        <div class="flex justify-center items-center gap-8 mt-8">
+            <button id="prev-btn" class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center text-lifin-blue transition-transform duration-200 hover:scale-110 active:scale-95">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="next-btn" class="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center text-lifin-blue transition-transform duration-200 hover:scale-110 active:scale-95">
+                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const games = [
+                {
+                    title: 'Akuntan Cilik',
+                    subtitle: 'Adu cepat berhitung!',
+                    href: './akuntan-cilik.html',
+                    color: '#04b3e3',
+                    bgColor: '#e0f7fa',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>`
+                },
+                {
+                    title: 'Cuanesia',
+                    subtitle: 'Kebutuhan vs Keinginan.',
+                    href: './cuanesia.html',
+                    color: '#004b75',
+                    bgColor: '#e0e8f0',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>`
+                },
+                {
+                    title: 'Detektif Cuan',
+                    subtitle: 'Tebak fakta atau hoaks!',
+                    href: './true-false.html',
+                    color: '#eeace6',
+                    bgColor: '#fbe4f8',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>`
+                },
+                {
+                    title: 'Split Smart',
+                    subtitle: 'Kelompokkan pengeluaran.',
+                    href: './split-smart.html',
+                    color: '#ff6b6b',
+                    bgColor: '#ffeeee',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>`
+                },
+                {
+                    title: 'Penjelajah Uang',
+                    subtitle: 'Jelajahi sejarah uang.',
+                    href: './penjelajah-uang.html',
+                    color: '#ffc72c',
+                    bgColor: '#fff8e1',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>`
+                },
+                {
+                    title: 'Kasus Cuan',
+                    subtitle: 'Pecahkan studi kasus finansial.',
+                    href: './kasus-cuan.html',
+                    color: '#9b59b6',
+                    bgColor: '#f3e5f5',
+                    icon: `<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>`
+                }
+            ];
+
+            const track = document.getElementById('carousel-track');
+            const gameTitle = document.getElementById('game-title');
+            const gameSubtitle = document.getElementById('game-subtitle');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            let currentIndex = 0;
+
+            // Membuat kartu game dan menambahkannya ke track
+            games.forEach((game, index) => {
+                const card = document.createElement('a');
+                card.href = game.href;
+                card.className = 'game-card block rounded-3xl overflow-hidden shadow-lg w-[280px] h-[320px]';
+                card.style.backgroundColor = game.color;
+                card.innerHTML = `
+                    <div class="card-texture h-48 flex items-center justify-center p-4">
+                        <div class="bg-white/20 p-4 rounded-full">
+                            ${game.icon}
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white text-center h-[128px]">
+                        <h3 class="font-extrabold text-2xl text-gray-800">${game.title}</h3>
+                        <p class="font-semibold text-gray-500 mt-1">${game.subtitle}</p>
+                    </div>
+                `;
+                track.appendChild(card);
+            });
+
+            const cards = track.querySelectorAll('.game-card');
+
+            function updateCarousel() {
+                const offset = -currentIndex * 320 + (track.parentElement.offsetWidth / 2 - 140);
+                track.style.transform = `translateX(${offset}px)`;
+
+                cards.forEach((card, index) => {
+                    card.classList.remove('active', 'left', 'right');
+                    if (index === currentIndex) {
+                        card.classList.add('active');
+                    } else if (index < currentIndex) {
+                        card.classList.add('left');
+                    } else {
+                        card.classList.add('right');
+                    }
+                });
+
+                // Update judul, subtitle, dan warna latar
+                const activeGame = games[currentIndex];
+                gameTitle.textContent = activeGame.title;
+                gameTitle.style.color = activeGame.color;
+                gameSubtitle.textContent = activeGame.subtitle;
+                document.body.style.backgroundColor = activeGame.bgColor;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % games.length;
+                updateCarousel();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + games.length) % games.length;
+                updateCarousel();
+            });
+            
+            // Inisialisasi carousel
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>
